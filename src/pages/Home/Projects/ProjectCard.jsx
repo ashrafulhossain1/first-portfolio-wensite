@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjectCard = () => {
     return (
@@ -30,14 +31,9 @@ const ProjectCard = () => {
                 >
                     Live Site
                 </a>
-                <a
-                    href="https://github.com/repo-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-colors"
-                >
-                    GitHub
-                </a>
+               <Link to='/details'>
+               GitHub
+               </Link>
             </div>
         </div>
     );

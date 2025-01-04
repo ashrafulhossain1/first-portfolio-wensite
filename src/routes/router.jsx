@@ -10,6 +10,10 @@ const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/details',
+                element: <p>ami aci re vai, no tension</p>
             }
         ]
     }

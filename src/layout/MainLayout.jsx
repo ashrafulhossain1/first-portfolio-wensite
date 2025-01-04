@@ -10,7 +10,7 @@ const MainLayout = () => {
                 <div className=' bg-slate-500/5 shadow-md'>
                     <Navbar></Navbar>
                 </div>
-                <div className='max-w-screen-xl mx-auto border-2 border-green-500 py-10'>
+                <div className='max-w-screen-xl mx-auto  py-10'>
                     <Outlet></Outlet>
                 </div>
                 <div>

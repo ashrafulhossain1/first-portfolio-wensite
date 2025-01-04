@@ -3,7 +3,7 @@ import bannerImg from '../../../assets/bannerMy.png'
 
 const Banner = () => {
     return (
-        <div className=" bg-purple-100  h-[450px]  border-2  border-yellow-400 flex flex-col-reverse md:flex-row items-center justify-between p-8">
+        <div className=" bg-purple-100  h-[450px]   flex flex-col-reverse md:flex-row items-center justify-between p-8">
             {/* Text Content */}
             <div className="md:w-1/2 space-y-3 text-center md:text-left">
                 <h3 className="text-sm uppercase tracking-wide font-medium text-primary">Front-end Developer</h3>

@@ -9,9 +9,9 @@ const Navbar = () => {
         <nav id="top" className="fixed top-0 w-full z-50 bg-base-100 shadow-md">
             <div className="container mx-auto flex items-center justify-between px-4 py-2">
                 {/* Left: Name */}
-                <a href="#top" className="text-xl font-bold">
+                <Link to={'/'} className="text-xl font-bold">
                     Ashraful
-                </a>
+                </Link>
 
                 {/* Middle: Navigation Menu (visible on md and up) */}
                 <div className="hidden md:flex space-x-6">
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <a
                         href="/Ashraful-Hossain_CV.pdf"
                         download="Ashraful-Hossain_CV.pdf" 
-                        className="btn btn-primary"
+                        className="border-2 rounded-md py-1 px-2 bg-purple-200"
                     >
                         Download CV
                     </a>

@@ -41,7 +41,14 @@ const Banner = () => {
                     </button>
                 </div>
 
-                <button className="btn btn-primary rounded-lg px-6 py-2 mt-8">Download My CV</button>
+                <button className="btn btn-primary rounded-lg px-6 py-2 mt-8">
+                    <a
+                        href="/Ashraful-Hossain_CV.pdf"
+                        download="Ashraful-Hossain_CV.pdf"
+                    >
+                        Download CV
+                    </a>
+                </button>
             </div>
 
             {/* Image Content */}

@@ -7,10 +7,10 @@ const MainLayout = () => {
     return (
         <>
             <div >
-                <div className=' bg-slate-500/5 shadow-md'>
+                <div className='bg-slate-500/5 shadow-md'>
                     <Navbar></Navbar>
                 </div>
-                <div className='max-w-screen-xl mx-auto  py-10'>
+                <div className='max-w-screen-xl mx-auto  my-11'>
                     <Outlet></Outlet>
                 </div>
                 <div>

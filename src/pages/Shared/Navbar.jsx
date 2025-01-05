@@ -6,18 +6,18 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 w-full z-50 bg-base-100 shadow-md">
+        <nav id="top" className="fixed top-0 w-full z-50 bg-base-100 shadow-md">
             <div className="container mx-auto flex items-center justify-between px-4 py-2">
                 {/* Left: Name */}
-                <Link to="/" className="text-xl font-bold">
+                <a href="#top" className="text-xl font-bold">
                     Ashraful
-                </Link>
+                </a>
 
                 {/* Middle: Navigation Menu (visible on md and up) */}
                 <div className="hidden md:flex space-x-6">
-                    <a href="#home" className="btn btn-ghost normal-case">
+                    <Link href="#top" className="btn btn-ghost normal-case">
                         Home
-                    </a>
+                    </Link>
                     <a href="#about" className="btn btn-ghost normal-case">
                         About
                     </a>
@@ -31,9 +31,13 @@ const Navbar = () => {
 
                 <div>
                     {/* Right: Download CV Button */}
-                    <button href="#" className="border px-2 py-1 md:inline-block">
+                    <a
+                        href="/Ashraful-Hossain_CV.pdf"
+                        download="Ashraful-Hossain_CV.pdf" 
+                        className="btn btn-primary"
+                    >
                         Download CV
-                    </button>
+                    </a>
 
                     {/* Mobile Menu Button */}
                     <button
@@ -41,7 +45,7 @@ const Navbar = () => {
                         className="btn p-0 btn-ghost btn-square md:hidden"
                         aria-label="Toggle Navigation"
                     >
-                        <MdOutlineMenu className="p-0"></MdOutlineMenu>
+                        <MdOutlineMenu className="p-0" />
                     </button>
                 </div>
             </div>

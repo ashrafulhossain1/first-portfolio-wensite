@@ -22,7 +22,7 @@ const AboutMe = () => {
                     </p>
 
                     {/* Animated Background Circles */}
-                    <div className="absolute hidden md:block inset-1 z-50 md:flex items-center justify-center pointer-events-none">
+                    <div className="absolute hidden md:block inset-1 md:flex items-center justify-center pointer-events-none">
                         <div className="absolute w-64 h-64 bg-black rounded-full opacity-30 blur-3xl animate-pulse">
 
                         </div>

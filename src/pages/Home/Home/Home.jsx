@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Banner from '../Banner/Banner';
 import AboutMe from '../AboutMe/AboutMe';
 import Skills from '../Skills/Skills';

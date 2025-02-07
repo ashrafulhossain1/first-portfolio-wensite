@@ -1,6 +1,7 @@
+import './navbar.css'
 const Footer = () => {
     return (
-        <footer className="bg-[#131313] text-white py-4">
+        <footer className="bg-[#131313] text-white py-4 footer-css">
             <div className="container mx-auto text-center">
                 <p className="text-sm font-medium">
                     Designed and Developed by{" "}

@@ -10,18 +10,20 @@ const Details = () => {
 
     if (!project) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <h1 className="text-3xl font-bold text-gray-600">Project not found</h1>
+            <div className="min-h-screen flex items-center justify-center bg-[#151719]">
+                <h1 className="text-3xl font-bold text-gray-400">Project not found</h1>
             </div>
         );
     }
 
     return (
-        <div className="min-h-screen bg-gray-100 p-6">
+        <div className="min-h-screen bg-[#151719] text-white p-6">
             <div className="container mx-auto">
                 {/* Project Title */}
-                <h1 className="text-4xl font-bold text-gray-800 text-center">{project.name}</h1>
-                <p className="text-lg text-gray-600 text-center mt-4">{project.description}</p>
+                <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 text-center">
+                    {project.name}
+                </h1>
+                <p className="text-lg text-gray-400 text-center mt-4">{project.description}</p>
 
                 {/* Project Details */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
@@ -35,15 +37,13 @@ const Details = () => {
                     </div>
 
                     {/* Details Section */}
-                    <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Project Details</h2>
-                        <p className="text-gray-600 leading-relaxed">{project.details}</p>
-                        <h3 className="text-xl font-semibold text-gray-700 mt-6">Technologies Used:</h3>
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h2 className="text-2xl font-semibold text-gray-200 mb-4">Project Details</h2>
+                        <p className="text-gray-400 leading-relaxed">{project.details}</p>
+                        <h3 className="text-xl font-semibold text-gray-200 mt-6">Technologies Used:</h3>
                         <ul className="list-disc pl-5 mt-2">
                             {project.technologies.map((tech, index) => (
-                                <li key={index} className="text-gray-600">
-                                    {tech}
-                                </li>
+                                <li key={index} className="text-gray-400">{tech}</li>
                             ))}
                         </ul>
                     </div>
@@ -55,7 +55,7 @@ const Details = () => {
                         href={project.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-orange-500 text-white py-2 px-6 rounded-lg shadow hover:bg-orange-600 transition duration-300 text-center"
+                        className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-2 px-6 rounded-lg shadow hover:opacity-90 transition duration-300 text-center"
                     >
                         Live Project
                     </a>
@@ -63,19 +63,18 @@ const Details = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gray-800 text-white py-2 px-6 rounded-lg shadow hover:bg-gray-900 transition duration-300 text-center"
+                        className="bg-gray-700 text-white py-2 px-6 rounded-lg shadow hover:bg-gray-600 transition duration-300 text-center"
                     >
                         GitHub Repository
                     </a>
                 </div>
 
                 {/* Challenges and Improvements */}
-                <div className="mt-10 bg-white p-6 rounded-lg shadow-lg">
-                    <h2 className="text-2xl font-semibold text-gray-700 mb-4">Challenges Faced</h2>
-                    <p className="text-gray-600 leading-relaxed">{project.challenges}</p>
-
-                    <h2 className="text-2xl font-semibold text-gray-700 mt-6">Future Improvements</h2>
-                    <p className="text-gray-600 leading-relaxed">{project.improvements}</p>
+                <div className="mt-10 bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h2 className="text-2xl font-semibold text-gray-200 mb-4">Challenges Faced</h2>
+                    <p className="text-gray-400 leading-relaxed">{project.challenges}</p>
+                    <h2 className="text-2xl font-semibold text-gray-200 mt-6">Future Improvements</h2>
+                    <p className="text-gray-400 leading-relaxed">{project.improvements}</p>
                 </div>
             </div>
         </div>

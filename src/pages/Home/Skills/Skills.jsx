@@ -35,9 +35,9 @@ const Skills = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="page-title text-3xl font-bold text-white text-center mb-8"
+          className="page-title text-lg md:text-3xl xl:text-5xl font-bold text-white text-center mb-8"
         >
-          My Skills
+          What I Use
         </motion.h1>
         {/* Skills Cards */}
         <motion.div
@@ -99,7 +99,7 @@ const Skills = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             whileHover={{
-              background: "linear-gradient(135deg, #4a0d6b, #2a1e3b)",
+              background: "linear-gradient(135deg,  #FFCA28, #4a0d6b)",
             }}
             transition={{ duration: 0.5, type: "tween" }}
             className="skill-card bg-gradient-to-br from-[#140C1C] to-[#2a1e3b] p-4 text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"

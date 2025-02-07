@@ -9,7 +9,9 @@ import Contact from '../ContactMe/Contact';
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
+            <div className='bg-[#131313] '>
+                <Banner></Banner>
+            </div>
             <AboutMe></AboutMe>
             <Skills></Skills>
             <Education></Education>

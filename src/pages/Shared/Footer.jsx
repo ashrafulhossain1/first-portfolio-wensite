@@ -1,11 +1,15 @@
-import React from 'react';
-
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-base-300 text-base-content p-4">
-            <aside>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-            </aside>
+        <footer className="bg-[#131313] text-white py-4">
+            <div className="container mx-auto text-center">
+                <p className="text-sm font-medium">
+                    Designed and Developed by{" "}
+                    <span className="text-blue-400 font-bold">Ashraful Hossain</span>
+                </p>
+                <p className="text-xs text-gray-400 mt-1">
+                    Copyright © {new Date().getFullYear()} - All rights reserved.
+                </p>
+            </div>
         </footer>
     );
 };

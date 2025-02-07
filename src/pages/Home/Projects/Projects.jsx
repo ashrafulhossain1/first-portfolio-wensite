@@ -12,16 +12,21 @@ const Projects = () => {
             });
     }, []);
 
-    
     return (
-        <section id="projects" className="py-10 md:py-16 bg-gray-100">
+        <section
+            id="projects"
+            className="py-10 md:py-16 bg-gradient-to-b from-[#131313fe] to-[#050709ee]"
+        >
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+                {/* Section Title */}
+                <h2 className="text-3xl font-bold text-center text-white mb-12">
                     My Projects
                 </h2>
-                <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                {/* Section Description */}
+                <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
                     Explore some of the exciting projects I have worked on. Each project showcases my skills in different technologies and demonstrates my ability to solve problems and create impactful solutions.
                 </p>
+                {/* Project Cards Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                     {projects.map(project => (
                         <ProjectCard key={project.id} project={project} />

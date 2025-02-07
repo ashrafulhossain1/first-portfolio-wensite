@@ -1,10 +1,9 @@
-import React from 'react';
 import bannerImg from '../../../assets/aboutMy.jpg';
 import './banner.css';
 
 const Banner = () => {
     return (
-        <div className="relative bg-[#131313] py-10 rounded-b-3xl container mx-auto ">
+        <div className="relative py-10 rounded-b-3xl container mx-auto ">
             {/* Floating Ripple Circles */}
             <div className="absolute inset-0 overflow-hidden">
                 {/* Circle 1 */}
@@ -105,7 +104,7 @@ const Banner = () => {
                     <a
                         href="/Ashraful-Hossain_CV.pdf"
                         download="Ashraful-Hossain_CV.pdf"
-                        className="hidden md:inline-block py-2 px-6 bg-[#565960] text-white font-medium rounded-md hover:bg-purple-700 transition duration-300"
+                        className="hidden md:inline-block py-2 px-6  text-white font-medium rounded-md hover:bg-purple-800 bg-purple-700 transition duration-300"
                     >
                         Download CV
                     </a>
@@ -115,7 +114,7 @@ const Banner = () => {
                     <img
                         src={bannerImg}
                         alt="Designer Portrait"
-                        className="w-full h-full border-2 border-purple-600 rounded-3xl"
+                        className="w-full object-cover h-full border-2 border-purple-600 rounded-3xl"
                     />
                 </div>
             </div>

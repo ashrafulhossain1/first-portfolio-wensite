@@ -21,18 +21,8 @@ const AboutMe = () => {
                         After stepping away from running a coaching center in 2023, I immersed myself in learning modern web development skills and building practical projects. With determination and a hunger for growth, I’m now focused on honing my craft, solving real-world problems, and continuously improving as a developer.
                     </p>
 
-                    {/* Call to Action Button */}
-                    <div className="flex justify-center mt-8">
-                        <a
-                            href="#contact"
-                            className="inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
-                        >
-                            Contact me
-                        </a>
-                    </div>
-
                     {/* Animated Background Circles */}
-                    <div className="absolute inset-1 flex items-center justify-center pointer-events-none">
+                    <div className="absolute hidden md:block inset-1 z-50 md:flex items-center justify-center pointer-events-none">
                         <div className="absolute w-64 h-64 bg-black rounded-full opacity-30 blur-3xl animate-pulse">
 
                         </div>

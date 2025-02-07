@@ -2,26 +2,42 @@ import React from "react";
 
 const AboutMe = () => {
     return (
-        <section id="about" className="bg-white py-12">
+        <section id="about" className="py-12 bg-[#100606] ">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
-                <h2 className="text-4xl font-bold text-center mb-8">
+                <h2 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text text-purple-700 ">
                     About Me
                 </h2>
 
                 {/* Content */}
-                <div className="space-y-6 text-lg text-gray-700">
-                    <p>
-                        Ever since my first year in honors, I had a dream of becoming a programmer.
-                        Unfortunately, due to financial struggles, I couldn’t buy a PC. However, I never gave up on my aspirations.
-                        In my third year (2023), I started offering private tuition to save money. By June 2024, I stopped teaching and
-                        used my savings to buy a PC, marking the beginning of my programming journey.
+                <div className="space-y-6 text-base md:text-lg text-gray-300 w-full md:w-3/4 mx-auto ">
+                    {/* Intro Paragraph */}
+                    <p className="text-center ">
+                        Hi, I’m Ashraful Hossain, a dedicated and self-motivated junior front-end developer with a deep passion for programming that has inspired me since 2020—or even earlier. Despite facing personal and professional challenges along the way, I recently made the bold decision to fully commit to my dream of becoming a developer.
                     </p>
 
-                    <p>
-                        I am passionate about becoming a helpful person not only in programming but also in life. One of my biggest dreams
-                        is to succeed and inspire underprivileged individuals to achieve their goals.
+                    {/* Second Paragraph */}
+                    <p className="text-center">
+                        After stepping away from running a coaching center in 2023, I immersed myself in learning modern web development skills and building practical projects. With determination and a hunger for growth, I’m now focused on honing my craft, solving real-world problems, and continuously improving as a developer.
                     </p>
+
+                    {/* Call to Action Button */}
+                    <div className="flex justify-center mt-8">
+                        <a
+                            href="#contact"
+                            className="inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+                        >
+                            Contact me
+                        </a>
+                    </div>
+
+                    {/* Animated Background Circles */}
+                    <div className="absolute inset-1 flex items-center justify-center pointer-events-none">
+                        <div className="absolute w-64 h-64 bg-black rounded-full opacity-30 blur-3xl animate-pulse">
+
+                        </div>
+                        <div className="absolute w-48 h-48 bg-purple-950 rounded-full opacity-10 blur-3xl animate-pulse animation-delay-2000"></div>
+                    </div>
                 </div>
             </div>
         </section>

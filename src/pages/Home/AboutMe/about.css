@@ -1,0 +1,8 @@
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2); /* Adjust this value to control how much it grows */
+    }
+}

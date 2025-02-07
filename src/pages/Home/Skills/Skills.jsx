@@ -1,71 +1,196 @@
-import React from 'react';
-import { FaGithub, FaNodeJs, FaReact } from 'react-icons/fa';
-import { FaC } from 'react-icons/fa6';
-import { SiDaisyui, SiJavascript, SiMongodb, SiTailwindcss } from 'react-icons/si';
+import React from "react";
+import daisyui from '../../../assets/daisyUI.png';
+import tailwind from '../../../assets/Tailwind_CSS.png';
+import { motion } from 'framer-motion'; // For animations
 
 const Skills = () => {
-    const skillsData = [
-        { name: "React", icon: <FaReact className="text-blue-400 text-5xl" />, skillLevel: 75 },
-        { name: "JavaScript", icon: <SiJavascript className="text-yellow-500 text-5xl" />, skillLevel: 85 },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500 text-5xl" />, skillLevel: 90 },
-        { name: "DaisyUI", icon: <SiDaisyui className="text-purple-500 text-5xl" />, skillLevel: 80 },
-        { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-5xl" />, skillLevel: 50 },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-5xl" />, skillLevel: 70 },
-        { name: "C++", icon: <FaC className="text-blue-600 text-5xl" />, skillLevel: 60 },
-        { name: "GitHub", icon: <FaGithub className="text-black text-5xl" />, skillLevel: 90 },
-    ];
+  // Data for skills
+  const frontendSkills = [
+    { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+    { name: "Tailwind CSS", icon: tailwind },
+    { name: "DaisyUI", icon: daisyui },
+    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  ];
+  const backendSkills = [
+    { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "Firebase", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
+  ];
+  const tools = [
+    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+    { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+    { name: "Vercel", icon: "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" },
+  ];
 
-    const getProgressBarColor = (level) => {
-        if (level >= 90) return "bg-green-500";
-        if (level >= 75) return "bg-teal-400";
-        if (level >= 50) return "bg-yellow-400";
-        return "bg-red-400";
-    };
-
-    return (
-        <section className="mt-10 py-6 rounded-3xl bg-gradient-to-b from-gray-100 to-gray-200" id="skills">
-            <div className="container mx-auto px-6">
-                {/* Section Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
-                        My Skills
-                    </h2>
-                    <p className="text-lg text-gray-600">
-                        These are the technologies I have experience with. I am continually improving my skills to stay updated with modern tools and practices.
-                    </p>
-                </div>
-
-                {/* Skills Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    {skillsData.map((skill, index) => (
-                        <div
-                            key={index}
-                            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
-                        >
-                            {/* Skill Name and Icon */}
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center">
-                                    <div className="mr-4">{skill.icon}</div>
-                                    <h3 className="text-xl font-semibold text-gray-700">{skill.name}</h3>
-                                </div>
-                                <span className="text-gray-600 font-medium">{skill.skillLevel}%</span>
-                            </div>
-
-                            {/* Progress Bar */}
-                            <div className="mt-4">
-                                <div className="w-full h-2 bg-gray-300 rounded-full">
-                                    <div
-                                        className={`${getProgressBarColor(skill.skillLevel)} h-2 rounded-full`}
-                                        style={{ width: `${skill.skillLevel}%` }}
-                                    ></div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+  return (
+    <div className="bg-[#050709]">
+      <div className="skills-page w-11/12 mx-auto py-10 px-4">
+        {/* Page Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="page-title text-3xl font-bold text-white text-center mb-8"
+        >
+          My Skills
+        </motion.h1>
+        {/* Skills Cards */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ staggerChildren: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        >
+          {/* Frontend Skills Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{
+              background: "linear-gradient(135deg, #4a0d6b, #2a1e3b)",
+            }}
+            transition={{ duration: 0.5, type: "tween" }}
+            className="skill-card bg-gradient-to-br from-[#140C1C] to-[#2a1e3b] p-4 text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
+          >
+            <h2 className="category-title text-xl font-semibold text-gray-300 mb-4">Frontend Development</h2>
+            <div className="skills-grid flex flex-wrap justify-center">
+              {frontendSkills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="skill-item flex flex-col items-center mx-2 my-2 p-2 rounded-lg hover:bg-gray-700 transition-colors duration-300"
+                >
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon w-10 h-10 mb-1 transition-transform duration-500 ease-in-out"
+                  />
+                  <span className="skill-name text-xs text-white">{skill.name}</span>
+                </motion.div>
+              ))}
             </div>
-        </section>
-    );
+            {/* Apply flip animation on hover */}
+            <style jsx>{`
+              .skill-card:hover .skill-icon {
+                animation: flip 1s linear;
+              }
+              @keyframes flip {
+                0% {
+                  transform: perspective(400px) rotateY(0deg);
+                }
+                50% {
+                  transform: perspective(400px) rotateY(180deg);
+                }
+                100% {
+                  transform: perspective(400px) rotateY(360deg);
+                }
+              }
+            `}</style>
+          </motion.div>
+
+          {/* Backend Skills Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{
+              background: "linear-gradient(135deg, #4a0d6b, #2a1e3b)",
+            }}
+            transition={{ duration: 0.5, type: "tween" }}
+            className="skill-card bg-gradient-to-br from-[#140C1C] to-[#2a1e3b] p-4 text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
+          >
+            <h2 className="category-title text-xl font-semibold text-gray-300 mb-4">Backend Development</h2>
+            <div className="skills-grid flex flex-wrap justify-center">
+              {backendSkills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="skill-item flex flex-col items-center mx-2 my-2 p-2 rounded-lg hover:bg-gray-700 transition-colors duration-300"
+                >
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon w-10 h-10 mb-1 transition-transform duration-500 ease-in-out"
+                  />
+                  <span className="skill-name text-xs text-white">{skill.name}</span>
+                </motion.div>
+              ))}
+            </div>
+            {/* Apply flip animation on hover */}
+            <style jsx>{`
+              .skill-card:hover .skill-icon {
+                animation: flip 1s linear;
+              }
+              @keyframes flip {
+                0% {
+                  transform: perspective(400px) rotateY(0deg);
+                }
+                50% {
+                  transform: perspective(400px) rotateY(180deg);
+                }
+                100% {
+                  transform: perspective(400px) rotateY(360deg);
+                }
+              }
+            `}</style>
+          </motion.div>
+
+          {/* Tools & Platforms Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{
+              background: "linear-gradient(135deg, #0d4a6b, #2a1e3b)",
+            }}
+            transition={{ duration: 0.5, type: "tween" }}
+            className="skill-card bg-gradient-to-br from-[#140C1C] to-[#2a1e3b] p-4 text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
+          >
+            <h2 className="category-title text-xl font-semibold text-gray-300 mb-4">Tools & Platforms</h2>
+            <div className="skills-grid flex flex-wrap justify-center">
+              {tools.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="skill-item flex flex-col items-center mx-2 my-2 p-2 rounded-lg hover:bg-gray-700 transition-colors duration-300"
+                >
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon w-10 h-10 mb-1 transition-transform duration-500 ease-in-out"
+                  />
+                  <span className="skill-name text-xs text-white">{skill.name}</span>
+                </motion.div>
+              ))}
+            </div>
+            {/* Apply flip animation on hover */}
+            <style jsx>{`
+              .skill-card:hover .skill-icon {
+                animation: flip 1s linear;
+              }
+              @keyframes flip {
+                0% {
+                  transform: perspective(400px) rotateY(0deg);
+                }
+                50% {
+                  transform: perspective(400px) rotateY(180deg);
+                }
+                100% {
+                  transform: perspective(400px) rotateY(360deg);
+                }
+              }
+            `}</style>
+          </motion.div>
+        </motion.div>
+      </div>
+    </div>
+  );
 };
 
 export default Skills;

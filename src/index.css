@@ -13,3 +13,15 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+
+@layer utilities {
+    @keyframes smoothScroll {
+      0% { object-position: top; }
+      100% { object-position: bottom; }
+    }
+  
+    .animate-scroll-image {
+      animation: smoothScroll 3s ease-in-out forwards;
+    }
+  }

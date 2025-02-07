@@ -1,16 +1,16 @@
-import React from 'react';
 import Navbar from '../pages/Shared/Navbar';
 import Footer from '../pages/Shared/Footer';
 import { Outlet } from 'react-router-dom';
+import '../pages/Shared/navbar.css'
 
 const MainLayout = () => {
     return (
         <>
             <div >
-                <div className='bg-slate-500/5 shadow-md'>
+                <div className='sticky navbar-css  nav-glass  top-0 left-0 z-40'>
                     <Navbar></Navbar>
                 </div>
-                <div className='max-w-screen-xl mx-auto  my-11'>
+                <div className=''>
                     <Outlet></Outlet>
                 </div>
                 <div>

@@ -12,6 +12,7 @@ const Projects = () => {
             });
     }, []);
 
+    
     return (
         <section id="projects" className="py-10 md:py-16 bg-gray-100">
             <div className="container mx-auto px-4 md:px-6">

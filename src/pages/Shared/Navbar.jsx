@@ -19,12 +19,14 @@ const Navbar = () => {
                 {/* Middle: Navigation Menu (visible on md and up) */}
                 <div className="hidden md:flex space-x-6">
                     <Link
-                        to='/'
+                        to="/"
+                        onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                            setIsMobileMenuOpen(false);
+                        }}
                         className={`text-gray-300 hover:text-white transition duration-300   
-                            
-                            ${location.pathname === "/" && location.hash === "" ? "border-b-2 border-purple-600" : ""
-                            }`}
-                    >
+    ${location.pathname === "/" && location.hash === "" ? "border-b-2 border-purple-600" : ""}
+  `}>
                         Home
                     </Link>
                     <a

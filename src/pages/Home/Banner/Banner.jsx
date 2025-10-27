@@ -102,8 +102,8 @@ const Banner = () => {
                         </a>
                     </div>
                     <a
-                        href="/Ashraful_resume.pdf"
-                        download="Ashraful_resume.pdf"
+                        href="/Ashraful-resume.pdf"
+                        download="Ashraful-resume.pdf"
                         className="hidden md:inline-block py-2 px-6  text-white font-medium rounded-md hover:bg-purple-800 bg-purple-700 transition duration-300"
                     >
                         Download CV

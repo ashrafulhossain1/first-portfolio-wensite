@@ -57,7 +57,7 @@ const Banner = () => {
             <div className='flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto gap-10 '>
                 <div className="relative z-10 md:w-1/2 space-y-3 text-center md:text-left text-white">
                     <h3 className="text-xl md:text-2xl font-bold">
-                        Junior Full Stack Web Developer
+                        Full-Stack Developer
                     </h3>
                     <h1 className="text-3xl md:text-5xl font-medium">
                         Crafting Code Creating Impact...
@@ -102,8 +102,8 @@ const Banner = () => {
                         </a>
                     </div>
                     <a
-                        href="/Ashraful-Hossain_CV.pdf"
-                        download="Ashraful-Hossain_CV.pdf"
+                        href="/Ashraful_resume.pdf"
+                        download="Ashraful_resume.pdf"
                         className="hidden md:inline-block py-2 px-6  text-white font-medium rounded-md hover:bg-purple-800 bg-purple-700 transition duration-300"
                     >
                         Download CV

@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <div className='bg-[#131313] '>
-                <Banner></Banner>
+            <Banner></Banner>
             </div>
             <AboutMe></AboutMe>
             <Skills></Skills>

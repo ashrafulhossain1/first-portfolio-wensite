@@ -12,18 +12,6 @@
         "details": "This e-commerce platform was designed to handle a large number of users and products while ensuring a smooth user experience. One of the main challenges was creating a secure payment system using Stripe, ensuring that user data was protected during transactions. Additionally, optimizing MongoDB queries for faster data retrieval was a key focus. Future improvements include adding more comprehensive analytics for admins and incorporating AI to suggest products to users based on their browsing and purchasing history."
     },
     {
-        "id": 2,
-        "name": "Online Gadgets Shop",
-        "image": "https://i.ibb.co.com/Fn1w2dr/gadget.png",
-        "technologies": ["Vue.js", "Firebase", "Vuetify"],
-        "description": "A task management app to organize tasks, set deadlines, and track progress with real-time synchronization.",
-        "liveLink": "https://gadgets-assignment-8.netlify.app",
-        "githubLink": "https://github.com/ashrafulhossain1",
-        "challenges": "Ensuring real-time synchronization across multiple devices and implementing offline mode with data sync.",
-        "improvements": "Considering adding task prioritization using AI and integrating a calendar view for better planning.",
-        "details": "This app allows users to manage their tasks efficiently by providing real-time updates across all devices. A significant challenge was implementing offline mode, where data would sync seamlessly when the user went back online. The app uses Firebase for real-time database synchronization, ensuring a smooth experience. Future improvements include adding AI-based task prioritization and enhancing the UI with a calendar view for better planning and visualization."
-    },
-    {
         "id": 3,
         "name": "Sports Equipments Store",
         "image": "https://i.ibb.co.com/z8fM6r7/sports.png",

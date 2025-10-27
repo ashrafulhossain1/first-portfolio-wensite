@@ -58,8 +58,8 @@ const Navbar = () => {
 
                 {/* Right: Download CV Button (visible on md and up) */}
                 <a
-                    href="/Ashraful-Hossain_CV.pdf"
-                    download="Ashraful-Hossain_CV.pdf"
+                    href="/Ashraful_resume.pdf"
+                    download="Ashraful_resume.pdf"
                     className="hidden md:inline-block py-2 px-6 bg-[#565960]  text-white font-medium rounded-md hover:bg-purple-700 transition duration-300"
                 >
                     Download CV
@@ -127,8 +127,8 @@ const Navbar = () => {
                         Contact
                     </a>
                     <a
-                        href="/Ashraful-Hossain_CV.pdf"
-                        download="Ashraful-Hossain_CV.pdf"
+                        href="/Ashraful_resume.pdf"
+                        download="Ashraful_resume.pdf"
                         className="block text-center mt-4 py-2 px-4 mx-auto w-max bg-[#565960] text-white font-medium rounded-md hover:bg-purple-700 transition duration-300"
                     >
                         Download CV

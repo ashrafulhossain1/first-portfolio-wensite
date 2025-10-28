@@ -50,7 +50,9 @@ const Details = () => {
                 </div>
 
                 {/* Links */}
+                {/* Links */}
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-8">
+                    {/* Live Project */}
                     <a
                         href={project.liveLink}
                         target="_blank"
@@ -59,15 +61,28 @@ const Details = () => {
                     >
                         Live Project
                     </a>
+
+                    {/* Client Repository */}
                     <a
-                        href={project.githubLink}
+                        href={project.githubLink.client}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-700 text-white py-2 px-6 rounded-lg shadow hover:bg-gray-600 transition duration-300 text-center"
                     >
-                        GitHub Repository
+                        Client Repository
+                    </a>
+
+                    {/* Server Repository */}
+                    <a
+                        href={project.githubLink.server}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-700 text-white py-2 px-6 rounded-lg shadow hover:bg-gray-600 transition duration-300 text-center"
+                    >
+                        Server Repository
                     </a>
                 </div>
+
 
                 {/* Challenges and Improvements */}
                 <div className="mt-10 bg-gray-800 p-6 rounded-lg shadow-lg">

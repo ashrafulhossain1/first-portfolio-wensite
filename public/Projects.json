@@ -7,8 +7,8 @@
     "description": "A real-time team collaboration platform with task management, chat, and video conferencing features.",
     "liveLink": "https://xynexa.vercel.app",
     "githubLink": {
-      "client": "https://github.com/ashrafulhossain1/xynexa-client",
-      "server": "https://github.com/ashrafulhossain1/xynexa-server"
+      "client": "https://github.com/mdabdulkyum1/xynexa",
+      "server": "https://github.com/mdabdulkyum1/xynexa-server"
     },
     "challenges": "Integrating real-time communication with WebSockets and ensuring smooth video conferencing similar to Google Meet.",
     "improvements": "Plan to add AI-based meeting summaries and task automation features for team efficiency.",
@@ -22,8 +22,8 @@
     "description": "A logistics management platform that connects users, delivery personnel, and admins for efficient parcel handling.",
     "liveLink": "https://parcel-transpotation.web.app",
     "githubLink": {
-      "client": "https://github.com/ashrafulhossain1/parcel-client",
-      "server": "https://github.com/ashrafulhossain1/parcel-server"
+      "client": "https://github.com/ashrafulhossain1/parcel-transport-client",
+      "server": "https://github.com/ashrafulhossain1/parcel-transport-server"
     },
     "challenges": "Implementing secure role-based authentication with JWT and managing real-time delivery status updates.",
     "improvements": "Planning to integrate map tracking and AI-based delivery route optimization.",
@@ -36,21 +36,12 @@
     "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
     "description": "A scalable e-commerce platform with user authentication, payment integration, and a responsive UI.",
     "liveLink": "https://language--exchange-a-11.web.app",
-    "githubLink": "https://github.com/ashrafulhossain1",
+     "githubLink": {
+      "client": "https://github.com/ashrafulhossain1/language-exchange",
+      "server": "https://github.com/ashrafulhossain1/language-exchange-server"
+    },
     "challenges": "Implementing secure payment integration with Stripe and optimizing database queries for large product datasets.",
     "improvements": "Planning to enhance the admin panel with more analytics features and implement AI-based product recommendations.",
     "details": "This e-commerce platform was designed to handle a large number of users and products while ensuring a smooth user experience. One of the main challenges was creating a secure payment system using Stripe, ensuring that user data was protected during transactions. Additionally, optimizing MongoDB queries for faster data retrieval was a key focus. Future improvements include adding more comprehensive analytics for admins and incorporating AI to suggest products to users based on their browsing and purchasing history."
-  },
-  {
-    "id": 4,
-    "name": "Sports Equipments Store",
-    "image": "https://i.ibb.co.com/z8fM6r7/sports.png",
-    "technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
-    "description": "A personal portfolio showcasing skills, projects, and contact information with a modern design and smooth animations.",
-    "liveLink": "https://sports-express-961ff.web.app",
-    "githubLink": "https://github.com/ashrafulhossain1",
-    "challenges": "Creating a responsive and accessible design while implementing animations without affecting performance.",
-    "improvements": "Adding a blog section and multilingual support to reach a wider audience.",
-    "details": "This portfolio website highlights skills, experiences, and projects in a visually appealing way. One challenge was ensuring the animations, created with Framer Motion, were smooth and did not impact the site's performance. The design is fully responsive and optimized for accessibility, ensuring it works seamlessly across all devices and user needs. Future improvements include adding a blog section for sharing technical knowledge and implementing multilingual support to cater to a global audience."
   }
 ]
